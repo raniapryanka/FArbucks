@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffees</title>
+
+    <!--CSS External Link-->
+    <link rel="stylesheet" href="Coffees.css">
+    
+    
+
+    <!--Font Link (Caveat brush and Poppins)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <!--Icon Link-->
+    <script src="https://kit.fontawesome.com/eeb330a501.js" crossorigin="anonymous"></script>
+
+    <!--Social Media Icon Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+</head>
+
+
+<body>
+
+<!--Header + Navigation Section-->
+
+   
+
+
+    <section class="navheader">
+        <!--Navigation-->
+        <nav>
+            <!--Logo-->
+            <a href="HomePage.html"><img src="HomePageImages/FArbucksLogo.png" alt=""></a>
+
+            <!--Links to pages-->
+            <div class="navlinks" id="navmenu">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+
+                <ul>
+                    <li><a href="HomePage.html" class="neutral">Home</a></li>
+
+                    <li><a href="Coffees.html" class="active">Coffees</a></li>
+                    <li><a href="Events.html" class="neutral">Events</a></li>
+                    <li><a href="AboutUs.html" class="neutral">About Us</a></li>
+
+                    <li><a href="Register.html" class="button">Register</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+        </nav>
+    </section>
+
+    <section class="coffeeheader">
+        
+    </section>
+   
+<!--Header + Navigation Section (SELESAI)-->
+
+
+<!--Content Section-->
+
+    <!--Explore our coffee-->
+    <section class="coffeeintro">
+        <div class="cof-intro">
+                <h2>Explore</h2>
+                <h1>OUR COFFEE</h1>
+
+                <hr>
+                <!-- <br> -->
+
+                <p>Whether you are searching for something new to warm your mug, 
+                    something cold to help you keep cool as you enjoy the summer
+                    weather,  or just exploring our greatest products, you have 
+                    come to the right place. Gourmet and flavorful coffees produced 
+                    by our skilled baristas using high grade coffee beans and machines 
+                    will provide you with an unforgettable and outstanding experience. 
+                    Our coffee has the capacity to enrich us, boost our spirits, and 
+                    make the world grin with happiness, friendship, and joy. 
+                    We bring people closer together, allowing them to thrive
+                     and make the world a nicer, happier, and more caring place.  
+                </p>
+        </div>
+    </section>
+
+
+
+    <!--Coffee Pics-->
+    <section class="coffeepics">
+        <div class="row">
+            <div class="pics-col"> <!--internal container-->
+                  <img src="CoffeesImages/ourcoffee1.png" alt="">
+            </div>
+
+            <div class="pics-col">
+                <img src="CoffeesImages/ourcoffee2.png" alt="">
+            </div>
+
+            <div class="pics-col">
+                <img src="CoffeesImages/ourcoffee3.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Coffee Product list-->
+
+    <section class="coffeelist">
+
+        <!--Hot coffees-->
+        <div class="coffee-type">
+            <p>Hot Coffees</p>
+            <hr>
+        </div>
+
+        <!--Hot coffees products-->
+        <section id="products1" class="products">
+            <div class="product-con">
+                <div class="pro">
+                    <img src="CoffeesImages/product1.png" alt="">
+                    <div class="desc">
+                        <h5>Caffè Americano</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Espresso shots topped with hot water create
+                            a light layer of crema resulting in a 
+                            deliciously rich cup with depth and 
+                            nuance.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product2.png" alt="">
+                    <div class="desc">
+                        <h5>Caffè Misto</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star diff"></i>
+                        </div>
+                        <h4>Rp80.000,00</h4>
+                        <p>A one-to-one ratio of freshly brewed coffee 
+                            and steamed milk results in a remarkably 
+                            combined coffee drink that is particularly 
+                            delightful.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product3.png" alt="">
+                    <div class="desc">
+                        <h5>Caramel Macchiato</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Freshly brewed milk with 
+                            vanilla-flavored syrup laced with 
+                            espresso and finished with a sweet 
+                            caramel drizzle.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product4.png" alt="">
+                    <div class="desc">
+                        <h5>Cinnamon Dolce Latte</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Our classic espresso with freshly 
+                            steamed milk and cinnamon dolce-flavored 
+                            syrup, topped with sweetened whipped cream 
+                            and a cinnamon dolce topping to bring you 
+                            specialness in a delight.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+         <!--Cold coffees-->
+         <div class="coffee-type cold">
+            <p>Cold Coffees</p>
+            <hr>
+        </div>
+
+
+         <!--Cold coffees products-->
+         <section id="products1" class="products">
+            <div class="product-con">
+                <div class="pro">
+                    <img src="CoffeesImages/product5.png" alt="">
+                    <div class="desc">
+                        <h5>Iced Caffè Americano</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Espresso shots with a light
+                             layer of crema,topped with 
+                             cold water and served over ice. </p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product6.png" alt="">
+                    <div class="desc">
+                        <h5>Iced Shaken Espresso</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star diff"></i>
+                        </div>
+                        <h4>Rp75.000,00</h4>
+                        <p>Made with your favorite rich, 
+                            full-bodied espresso, then 
+                            shaken, iced, and mellowed with 
+                            sweetness and a touch of milk 
+                            for a pleasantly and delectably 
+                            convenient on-the-go drink.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product7.png" alt="">
+                    <div class="desc">
+                        <h5>Cold Brew Coffee-Milk</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star diff"></i>
+                        </div>
+                        <h4>Rp80.000,00</h4>
+                        <p>A combination of beans that 
+                            have been steeped for a long time 
+                            and at a low temperature for a 
+                            super-smooth flavor finished with 
+                            a splash of milk to enhance enjoyable 
+                            flavours.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product8.png" alt="">
+                    <div class="desc">
+                        <h5>Iced Caramel Macchiato</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Combination of our rich, 
+                            full-bodied espresso with
+                            vanilla-flavored syrup, milk and 
+                            ice, then top it off with a caramel 
+                            drizzle for a delicious 
+                            and delightful touch.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product9.png" alt="">
+                    <div class="desc">
+                        <h5>Iced Coffee</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp60.000,00</h4>
+                        <p>FArbucks Iced Coffee Blend, 
+                            chilled and sweetened over ice, 
+                            freshly made. A genuine, serious, 
+                            and energizing boost to any day.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product10.png" alt="">
+                    <div class="desc">
+                        <h5>Iced Cinnamon Dolce</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Freshly steamed milk and cinnamon 
+                            dolce-flavored syrup with our classic 
+                            espresso and ice, topped with sweetened 
+                            whipped cream and a cinnamon dolce topping.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+         <!--Frappuccinos-->
+         <div class="coffee-type cold">
+            <p>Frappuccinos</p>
+            <hr>
+        </div>
+
+
+        <!--Frappuccinos products-->
+        <section id="products1" class="products">
+            <div class="product-con">
+                <div class="pro">
+                    <img src="CoffeesImages/product11.png" alt="">
+                    <div class="desc">
+                        <h5>Mocha Cookie Crumble</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp70.000,00</h4>
+                        <p>Frappuccino Blended with milk and ice, 
+                            roast coffee, mocha sauce, and chocolate chips. 
+                            Topped with vanilla whipped cream, mocha drizzle, 
+                            and even more chocolate cookie crumble.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product12.png" alt="">
+                    <div class="desc">
+                        <h5>Caramel Ribbon Crunch</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star diff"></i>
+                        </div>
+                        <h4>Rp75.000,00</h4>
+                        <p>A layer of caramel sauce and whipped cream 
+                            on top of a buttery caramel syrup combined with 
+                            coffee, milk, and ice, then topped with a layer 
+                            of caramel drizzle, whipped cream, 
+                            and a crunchy caramel.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product13.png" alt="">
+                    <div class="desc">
+                        <h5>Caramel Frappuccino</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Rp75.000,00</h4>
+                        <p>Caramel mixed with coffee, 
+                            milk and ice, with whipped cream 
+                            and buttery caramel sauce layer on top.</p>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="CoffeesImages/product14.png" alt="">
+                    <div class="desc">
+                        <h5>Caffè Vanilla</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star diff"></i>
+                        </div>
+                        <h4>Rp60.000,00</h4>
+                        <p>Frappuccino roast coffee and vanilla bean powder, 
+                            combine  with milk and ice, topped with whipped 
+                            cream to make you feel refreshed in no time.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </section>
+
+<!--Content Section (SELESAI)-->
+
+
+
+<!--Footer Section-->
+<section class="fot">
+    <footer>
+
+        <div class="container">
+            <div class="col aboutus">
+                <h3>About Us</h3>
+                <hr>
+                <p>FArbucks Corporation, headquartered in Seattle, Washington, is an American and Indonesian global coffeehouse and roastery reserve chain. It is one one of the most fastest-growing coffee chains in the world.</p>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/starbucks/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col quicklinks">
+                <h3>Quick Links</h3>
+                <hr>
+                <ul class="links">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="Coffees.html">Coffees</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="col contact">
+                <h3>Contact Information</h3>
+                <hr>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Jl. Pakubuwono VI No.107, RT.11/RW.2,  <br> Kec. Kby. Baru, City of South Jakarta, <br> Special Capital Region of Jakarta 12120</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span>+62-813-555-205</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></i></span>
+                        <span>FArbucks.Team@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <div class="extra">
+        <h4>© 2022 FArbucks Coffee Company. All rights reserved.</h4>
+    </div>
+
+</section>
+
+<!--Footer Section (SELESAI)-->
+
+
+
+<!--Java script hamburger menu-->
+<script>
+    var navmenu = document.getElementById("navmenu");
+
+    function openMenu(){
+        navmenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        navmenu.style.right = "-220px";
+    }
+</script>
+
+<!--Java script hamburger menu (SELESAI)-->
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+
+    <!--CSS External Link-->
+    <link rel="stylesheet" href="Register.css">
+
+    <!--JAVA SCRIPT External Link-->
+    <script src="validation.js"></script>
+    
+    
+    <!--Font Link (Caveat brush and Poppins)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <!--Icon Link-->
+    <script src="https://kit.fontawesome.com/eeb330a501.js" crossorigin="anonymous"></script>
+
+    <!--Social Media Icon Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+</head>
+
+
+<body>
+
+<!--Header + Navigation Section-->
+    <section class="navheader">
+        <!--Navigation-->
+        <nav>
+            <!--Logo-->
+            <a href="HomePage.html"><img src="HomePageImages/FArbucksLogo.png" alt=""></a>
+
+            <!--Links to pages-->
+            <div class="navlinks" id="navmenu">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+
+                <ul>
+                    <li><a href="HomePage.html" class="neutral">Home</a></li>
+
+                    <li><a href="Coffees.html" class="neutral">Coffees</a></li>
+                    <li><a href="Events.html" class="neutral">Events</a></li>
+                    <li><a href="AboutUs.html" class="neutral">About Us</a></li>
+
+                    <li><a href="Register.html" class="button active">Register</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+        </nav>
+    </section>
+
+    <section class="regheader">
+        
+    </section>
+   
+<!--Header + Navigation Section (SELESAI)-->
+
+
+
+
+<!--Content Section-->
+
+    <!--Register intro-->
+    <section class="regintro">
+        <div class="reg-intro">
+                <h1>REGISTER</h1>
+
+                <hr class="main">
+                <!-- <br> -->
+
+                <p>Join FArbucks membership to
+                     earn stars for free coffees. 
+                     Get access and full range of 
+                     benefits to mobile ordering, 
+                     birthday rewards, and many more.
+                </p>
+
+                <hr class="sub">
+                <p class="req">* Required</p>
+        </div>
+    </section>
+
+    <!--Register form-->
+    <section class="regform">
+        <form class="form" id="form">
+
+            <!--Personal Information-->
+            <h2>Personal Information</h2>
+
+            <!--full name-->
+            <div class="formcont">
+                <label for="name">*Full Name</label>
+                <input type="text" placeholder="Enter your full name" id="name" required>
+            </div>
+
+            <!--full name-->
+            <div class="gender-detail">
+                <input type="radio" name="gender" id="dot1">
+                <input type="radio" name="gender" id="dot2">
+                <input type="radio" name="gender" id="dot3">
+
+                <span class="gender">Gender</span>
+                <div class="category">
+                    <label for="dot1">
+                        <span class="dot satu"></span>
+                        <span class="gender1">Male</span>
+                    </label>
+                    <label for="dot2">
+                        <span class="dot dua"></span>
+                        <span class="gender1">Female</span>
+                    </label>
+                    <label for="dot3">
+                        <span class="dot tiga"></span>
+                        <span class="gender1">Other</span>
+                    </label>
+                </div>
+            </div>
+
+
+            <!--Age-->
+            <div class="formcont">
+                <label>*Age</label>
+                <input type="number" placeholder="Enter your age" id="age" required>
+
+            </div>
+
+            <!--Continent-->
+            <div class="select-box">
+                <span class="details1">Continent</span>
+                <select>
+                        <option selected disabled>Select your continent</option>
+                        <option  value="Africa">Africa</option>
+                        <option  value="Antarctica">Antarctica</option>
+                        <option  value="Asia">Asia</option>
+                        <option  value="Australia">Australia</option>
+                        <option  value="Europe">Europe</option>
+                        <option  value="North America">North America</option>
+                        <option  value="South America">South America</option>
+                        
+                </select>
+                <i class="fa fa-caret-down icon"></i>
+            </div>
+
+            <!--Address-->
+            <div class="formcont">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your address" id="address">
+            </div>
+
+
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <br>
+
+
+
+            <!--Account Security-->
+            <h2>Account Security</h2>
+            <div class="formcont">
+                <label>*Email</label>
+                <input type="text" placeholder="Enter your email address" id="email" required>
+            </div>
+
+            <div class="formcont">
+                <label>*Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" id="phonenum" required>
+            </div>
+
+            <div class="formcont">
+                <label>*Password</label>
+                <input type="password" placeholder="Enter a password" id="pass" required>
+                <p>Use 8 or more characters for your password</p>
+            </div>
+
+            <div class="formcont">
+                <label>*Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" id="pass2" required>
+            </div>
+
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <br>
+
+
+            <!--Additional services-->
+            <h2>Additional Services</h2>
+            <div class="formcont plus">
+                <label>Collect More Stars and Earn <br> Rewards</label>
+                <p>Subscribing to FArbucks' online newsletter, as well as permitting FArbucks to send you an email, will help you earn more stars and rewards. Stay up to date on special discounts and new products. </p>
+            </div>
+
+            <div class="extra-info">
+                <input type="checkbox" id="check">
+                <label for="check">Allow email from FArbucks</label>
+            </div>
+
+            <br>
+            <br>
+            <div class="extra-info">
+                <input type="checkbox" id="check">
+                <label for="check">Subscribe to Farbucks online <br> newsletter</label>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="formcont plus">
+                <label>*Terms of Use</label>
+                <p>When you agree to the Terms and Conditions you also consent to our use of your personal information to process and operate your FArbucks membership account. To see how to control your personal data, please see our privacy policy. </p>
+            </div>
+            <div class="extra-info">
+                <input type="checkbox" name="agree" id="agreement" required>
+                <label for="agreement">I agree with FArbucks terms and <br> conditions</label>
+            </div>
+
+
+
+
+
+            <!--Submit button-->
+            <button type="submit" onclick="validateForm()">Register</button>
+        </form>
+
+
+
+    </section>
+
+
+
+
+   
+
+
+<!--Content Section (SELESAI)-->
+
+
+
+<!--Footer Section-->
+<section class="fot">
+    <footer>
+
+        <div class="container">
+            <div class="col aboutus">
+                <h3>About Us</h3>
+                <hr>
+                <p>FArbucks Corporation, headquartered in Seattle, Washington, is an American and Indonesian global coffeehouse and roastery reserve chain. It is one one of the most fastest-growing coffee chains in the world.</p>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/starbucks/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col quicklinks">
+                <h3>Quick Links</h3>
+                <hr>
+                <ul class="links">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="Coffees.html">Coffees</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="col contact">
+                <h3>Contact Information</h3>
+                <hr>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Jl. Pakubuwono VI No.107, RT.11/RW.2,  <br> Kec. Kby. Baru, City of South Jakarta, <br> Special Capital Region of Jakarta 12120</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span>+62-813-555-205</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></i></span>
+                        <span>FArbucks.Team@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <div class="extra">
+        <h4>© 2022 FArbucks Coffee Company. All rights reserved.</h4>
+    </div>
+
+</section>
+
+<!--Footer Section (SELESAI)-->
+
+
+
+
+
+<!--Java script hamburger menu-->
+<script>
+    var navmenu = document.getElementById("navmenu");
+
+    function openMenu(){
+        navmenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        navmenu.style.right = "-220px";
+    }
+</script>
+
+<!--Java script hamburger menu (SELESAI)-->
+
+
+
+
+</body>
+
+
+
+</html>
